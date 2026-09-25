@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-cnmv-filings",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Spain CNMV Regulated Filings MCP — keyless, same-day-fresh.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a3ac21dc74216dcc089c2fcec22dcfba3742f557957f444c5e576c0eef05bbfe",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-5cf9e2145b3e373df2468de0a9ad98ed26e211a45b41d6473494910071bd8cca",
+    "sourceCommit": "5b29c2b0c11e1fcd954969a245b474e6e9475116"
   }
 }
