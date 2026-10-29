@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-cnmv-filings",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Spain CNMV Regulated Filings MCP — keyless, same-day-fresh.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-cnmv-filings": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "cnmv-filings"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-cnmv-filings.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/cnmv-filings",
   "pipeworx": {
-    "sourceHash": "v1-a5c7611fe5bf9f050fd97bffb411ef4c373fb23fc079e91a192d051d9339c359",
-    "sourceCommit": "f1ef7a2f6b9cb1b8da1374ec2fcb28c661582b35"
+    "mode": "gateway",
+    "slug": "cnmv-filings",
+    "gatewaySlug": "cnmv-filings",
+    "sourceHash": "v1-164fcdcb96bf49cc111afc890306a0fec2317a5f7af3a0403e0ab09c85e0c3c8",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }
